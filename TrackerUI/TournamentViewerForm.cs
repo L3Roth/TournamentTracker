@@ -26,5 +26,20 @@ namespace TrackerUI
         {
 
         }
+
+        private void TournamentViewerForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,6 +76,7 @@
             this.roundLabel.Size = new System.Drawing.Size(139, 54);
             this.roundLabel.TabIndex = 2;
             this.roundLabel.Text = "Round";
+            this.roundLabel.Click += new System.EventHandler(this.roundLabel_Click);
             // 
             // roundDropdown
             // 
@@ -84,6 +85,7 @@
             this.roundDropdown.Name = "roundDropdown";
             this.roundDropdown.Size = new System.Drawing.Size(377, 53);
             this.roundDropdown.TabIndex = 3;
+            this.roundDropdown.SelectedIndexChanged += new System.EventHandler(this.roundDropdown_SelectedIndexChanged);
             // 
             // unplayedOnlyCheckbox
             // 
@@ -218,6 +220,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "TournamentViewerForm";
             this.Text = "Tournament Viewer";
+            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
