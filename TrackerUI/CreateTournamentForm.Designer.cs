@@ -57,6 +57,7 @@
             this.headerLabel.Size = new System.Drawing.Size(478, 74);
             this.headerLabel.TabIndex = 1;
             this.headerLabel.Text = "Create Tournament";
+            this.headerLabel.Click += new System.EventHandler(this.headerLabel_Click);
             // 
             // tournamentNameValue
             // 
@@ -64,6 +65,7 @@
             this.tournamentNameValue.Name = "tournamentNameValue";
             this.tournamentNameValue.Size = new System.Drawing.Size(434, 50);
             this.tournamentNameValue.TabIndex = 11;
+            this.tournamentNameValue.TextChanged += new System.EventHandler(this.tournamentNameValue_TextChanged);
             // 
             // tournamentNameLabel
             // 
@@ -272,6 +274,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "CreateTournamentForm";
             this.Text = "Create Tournament";
+            this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
