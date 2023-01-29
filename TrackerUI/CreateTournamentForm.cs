@@ -36,5 +36,20 @@ namespace TrackerUI
         {
 
         }
+
+        private void headerLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateTournamentForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tournamentNameValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
