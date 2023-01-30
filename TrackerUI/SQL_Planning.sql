@@ -1,0 +1,52 @@
+﻿CREATE TABLE Tournaments (
+  ID INT PRIMARY KEY,
+  TournamentName VARCHAR(50) NOT NULL,
+  EntryFee DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE Prizes (
+  ID INT PRIMARY KEY,
+  PlaceNumber INT NOT NULL,
+  PlaceName VARCHAR(50) NOT NULL,
+  PrizeAmount DECIMAL(10,2) NOT NULL,
+  PrizePercentage DECIMAL(5,2) NOT NULL
+);
+
+CREATE TABLE TournamentPrizes (
+  ID INT PRIMARY KEY,
+  TournamentID INT NOT NULL,
+  PrizeID INT NOT NULL,
+  FOREIGN KEY (TournamentID) REFERENCES TournamentTable(ID),
+  FOREIGN KEY (PrizeID) REFERENCES PrizeTable(ID)
+);
+
+CREATE TABLE Teams (
+  ID INT PRIMARY KEY,
+  TeamName VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE TournamentEntries (
+  ID INT PRIMARY KEY,
+  TournamentID INT NOT NULL,
+  TeamID INT NOT NULL,
+  FOREIGN KEY (TournamentID) REFERENCES Tournaments(ID),
+  FOREIGN KEY (TeamID) REFERENCES Teams(ID)
+);
+
+CREATE TABLE People (
+  ID INT PRIMARY KEY,
+  FirstName VARCHAR(50) NOT NULL,
+  LastName VARCHAR(50) NOT NULL,
+  EmailAddress VARCHAR(100) NOT NULL,
+  CellphoneNumber VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE TeamMembers (
+  ID INT PRIMARY KEY,
+  TeamID INT NOT NULL,
+  PersonID INT NOT NULL,
+  FOREIGN KEY (TeamID) REFERENCES Teams(ID),
+  FOREIGN KEY (PersonID) REFERENCES People(ID)
+);
+
+
