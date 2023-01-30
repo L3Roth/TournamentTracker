@@ -108,7 +108,7 @@
             this.openCreateTournamentFormButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.openCreateTournamentFormButton.Location = new System.Drawing.Point(241, 414);
             this.openCreateTournamentFormButton.Name = "openCreateTournamentFormButton";
-            this.openCreateTournamentFormButton.Size = new System.Drawing.Size(470, 107);
+            this.openCreateTournamentFormButton.Size = new System.Drawing.Size(462, 107);
             this.openCreateTournamentFormButton.TabIndex = 37;
             this.openCreateTournamentFormButton.Text = "Create Tournament";
             this.openCreateTournamentFormButton.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(956, 607);
+            this.ClientSize = new System.Drawing.Size(1001, 762);
             this.Controls.Add(this.openCreateTournamentFormButton);
             this.Controls.Add(this.createTournamentButton);
             this.Controls.Add(this.loadTournamentButton);
